@@ -11,7 +11,7 @@ wall = createSprite(1500,200,50,50);
     car.shapeColor=color(0,255,0);
   } 
 
-  if(speed = (100-180)){
+  if(speed = (speed> 100 && speed< 180)){
     car.shapeColor=color(230,230,0);
   } 
 
