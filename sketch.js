@@ -7,9 +7,12 @@ function setup() {
 car = createSprite(50,200,50,50);
 wall = createSprite(1500,200,50,50);
   car.velocityX = speed;
+  deformation = 0.5*weight*speed*speed/22500
+  speed = speed - deformation
   if(speed< 100){
     car.shapeColor=color(0,255,0);
   } 
+  
 
   if(speed = (speed> 100 && speed< 180)){
     car.shapeColor=color(230,230,0);
